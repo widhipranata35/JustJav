@@ -1,2 +1,2 @@
-# JustJav
-increment n decrement
+# JustJava
+Aplikasi interakatif
