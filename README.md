@@ -1,2 +1,2 @@
-# JustJava
+# JustJav
 Aplikasi interakatif
