@@ -9,7 +9,7 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
-int quantity = 2;
+int quantity = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +28,15 @@ int quantity = 2;
     }
 
     public void submitOrder (View view) {
-        displayPrice(quantity * 5000);
+        int price = quantity * 5000;
+        String priceMessage = "Total Pembelian RP " + price;
+        priceMessage = priceMessage + "\nTerima Kasih !";
+        displayMessage(priceMessage);
+    }
+
+    private void displayMessage(String message) {
+        TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+        priceTextView.setText(message);
     }
 
     private void display(int number) {
